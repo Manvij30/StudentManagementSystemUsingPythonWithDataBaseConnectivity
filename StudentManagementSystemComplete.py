@@ -13,7 +13,7 @@ def addstudent():
             strr = 'insert into studentdata1 values(%s,%s,%s,%s,%s,%s,%s,%s,%s)'
             mycursor.execute(strr,(id,name,mobile,email,address,gender,dob,addeddate,addedtime))
             con.commit()
-            res = messagebox.askyesnocancel('Notificatrions','Id {} Name {} Added sucessfully.. and want to clean the form'.format(id,name),parent=addroot)
+            res = messagebox.askyesnocancel('Notifications','Id {} Name {} Added sucessfully.. and want to clean the form'.format(id,name),parent=addroot)
             if(res==True):
                 idval.set('')
                 nameval.set('')
